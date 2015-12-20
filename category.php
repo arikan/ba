@@ -10,15 +10,15 @@
 <?php while (have_posts()) : the_post(); ?>
     <? if ($i % 3 == 0) { ?>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-xs-12 col-md-4">
                 <?php get_template_part('templates/_thumb','module'); ?>
             </div>
     <? } else if ($i % 3 == 1) { ?>
-            <div class="col-md-4">
+            <div class="col-xs-12 col-md-4">
                 <?php get_template_part('templates/_thumb','module'); ?>
             </div>
     <? } else if ($i % 3 == 2) { ?>
-            <div class="col-md-4">
+            <div class="col-xs-12 col-md-4">
                 <?php get_template_part('templates/_thumb','module'); ?>
             </div>
         </div>
