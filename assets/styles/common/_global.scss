@@ -5,7 +5,15 @@
 .main {
 }
 
+// .row {
+//     margin-bottom: 15px;
+// }
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    margin-bottom: 15px;
+}
+
 .content.row {
+
     @media (max-width: $screen-md) {
         margin-top: -20px;
     }
@@ -325,6 +333,21 @@ main, .entry-content, .entry-summary {
     font-size: 16px;
     line-height: 1.4;
   }
+}
+main {
+    h3 {
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    time {
+        font-size: 14px;
+        margin: 0; padding: 0; line-height: 0;
+        a {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }
 article time, article p.author {
   font-size: 16px;

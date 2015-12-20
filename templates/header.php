@@ -14,6 +14,8 @@
             <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
               <?php bloginfo('name'); ?>
             </a>
+
+            <!-- <span class="glyphicon glyphicon-search"></span> -->
         </div>
 
         <nav class="collapse navbar-collapse" role="navigation">

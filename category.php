@@ -2,12 +2,11 @@
 
 ?>
 
-<h1>Cat</h1>
+<!-- <?php get_template_part('templates/page', 'header'); ?> -->
 
-
+<br>
 
 <?php $i = 0; ?>
-
 <?php while (have_posts()) : the_post(); ?>
     <? if ($i % 3 == 0) { ?>
         <div class="row">
