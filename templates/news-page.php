@@ -8,15 +8,15 @@
 
 <?php while (have_posts()) : the_post(); ?>
     <div class="post">
-        <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+        <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<div class="subtitle">
 			<?php the_time('F j, Y'); ?>
 			<?php the_tags(' | <b>Tags:</b> ', ', ', ''); ?>
 			<?php if ( $user_ID ) : ?> | <?php edit_post_link("Edit"); ?> <?php endif; ?> |
 			<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
 		</div>
-
-		<?php the_content('Read the rest of this entry &raquo;'); ?>
+        <?php the_excerpt(); ?>
+		<!-- <?php the_content('Read the rest of this entry &raquo;'); ?> -->
 
 		<hr/>
 	</div>

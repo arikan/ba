@@ -85,11 +85,22 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_category(),
+    is_single(),
     is_page_template('template-custom.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
 }
+
+add_filter('sage/display_sidebar', __NAMESPACE__ . '\sage_sidebar_on_special_page');
+function sage_sidebar_on_special_page($sidebar) {
+  if (is_page('news-page')) {
+    return true;
+  }
+  return $sidebar;
+}
+
 
 /**
  * Theme assets
