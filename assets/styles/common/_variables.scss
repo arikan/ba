@@ -12,3 +12,21 @@ $brand-primary:         #27ae60;
 $navbar-default-brand-color: #333333;
 $navbar-default-link-color: #333333;
 $navbar-default-link-hover-color: #333333;
+$white-faded: rgba(255,255,255,0.5);
+$gray-dark: rgba(0,0,0,0.5);
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin serif() {
+	font-family: 'Lora', 'Georgia', serif;
+}
+
+@mixin sans-serif () {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

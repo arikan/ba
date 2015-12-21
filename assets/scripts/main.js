@@ -19,6 +19,19 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $("a.toggle-search").click(function (e) {
+            e.preventDefault();
+            $("body").toggleClass("searching");
+            // $(this).hide();
+            // $(".search-form .input-group").show();
+            $("input.search-field").focus();
+        });
+
+        $("input.search-field").focusout(function () {
+            $("body").toggleClass("searching");
+            // $(".search-form .input-group").hide();
+            // $("#search-link").show();
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
