@@ -44,6 +44,7 @@
 	.navbar-brand {
 		font-weight: 600;
 	}
+
 	.navbar-right {
 		margin-right: 0;
 	}
@@ -55,6 +56,9 @@
 				font-weight: 600;
 				letter-spacing: 1px;
 			}
+            a:hover {
+                text-decoration: none;
+            }
             ul.language-chooser {
                 margin:0; padding:0;
                 li {
@@ -65,6 +69,9 @@
                         padding: 20px 5px;
                         line-height: 20px;
                         color: $navbar-default-link-color;
+                    }
+                    a:hover {
+                        color: rgba(0,0,0,0.4);
                     }
                 }
                 li.active {
@@ -329,7 +336,27 @@ body.feature-image {
     a.toggle-search {
         color: #FFFFFF;
     }
-
+    a.navbar-brand:hover {
+        text-decoration: none;
+        color: rgba(255,255,255,0.7);
+    }
+    .nav {
+        li > a:hover {
+            text-decoration: none;
+            color: rgba(255,255,255,0.7);
+        }
+    }
+    ul.language-chooser {
+        li > a {
+            color: #FFFFFF !important;
+        }
+        li.active > a {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        li > a:hover {
+            color: rgba(255,255,255,0.5) !important;
+        }
+    }
 }
 
 .post-cover, .jumbotron {
