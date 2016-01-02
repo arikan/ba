@@ -219,9 +219,13 @@ div.search-module {
     background: white;
     border-bottom: 1px solid rgba(black, 0.1);
 
-    @media only screen and (max-width: 40em) {
+    @media (max-width: $screen-md) {
         height: 50px;
     }
+    @media (max-width: $screen-sm) {
+        height: 50px;
+    }
+
     a.close-search {
         display: block;
         position: absolute;
@@ -232,7 +236,11 @@ div.search-module {
         line-height: 54px;
         text-align: center;
 
-        @media only screen and (max-width: 40em) {
+        @media (max-width: $screen-md) {
+            left: 5px;
+            line-height: 44px;
+        }
+        @media (max-width: $screen-sm) {
             left: 5px;
             line-height: 44px;
         }
@@ -263,7 +271,11 @@ div.search-module {
         line-height: 40px;
         background: none;
 
-        @media only screen and (max-width: 40em) {
+        @media (max-width: $screen-md) {
+            height: 42px;
+            padding: 0 0 0 54px;
+        }
+        @media (max-width: $screen-sm) {
             height: 42px;
             padding: 0 0 0 54px;
         }
