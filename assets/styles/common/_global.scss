@@ -31,8 +31,7 @@
     display: inline;
 }
 
-// Navigation
-
+// Navigation  - - - - - - - - - - - - - - - - - - - - -
 .navbar-custom {
 	background: white;
 	position: absolute;
@@ -41,6 +40,7 @@
 	width: 100%;
 	z-index: 1000;
 	@include sans-serif;
+
 	.navbar-brand {
 		font-weight: 600;
 	}
@@ -315,6 +315,73 @@ div.search-module {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // Article Entry - - - - - - - - - - - - - - - - - - - - - - - - -
+body.feature-image {
+    div.entry-content {
+        margin-top: 240px;
+
+        @media (max-width: $screen-md) {
+            margin-top: 180px;
+        }
+        @media (max-width: $screen-sm) {
+            margin-top: 180px;
+        }
+    }
+    a.toggle-search {
+        color: #FFFFFF;
+    }
+
+}
+
+.post-cover, .jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    z-index: -1;
+    display: table;
+
+    .post-cover-inner {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    @media (max-width: $screen-md) {
+        min-height: 320px;
+    }
+    @media (max-width: $screen-sm) {
+        min-height: 320px;
+  }
+}
+.post-cover h1 {
+  @media (max-width: $screen-sm) {
+    // font-size: 38px !important;
+  }
+}
+.post-cover p {
+  @media (max-width: $screen-sm) {
+    // font-size: 1.5em !important;
+  }
+}
+.post-cover, .jumbotron {
+  color: rgba(255,255,255,1);
+}
+.post-cover a {
+  color: #FFFFFF;
+}
+.post-cover p.lead {
+    @include sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 100%;
+    color: rgba(255,255,255,0.85);
+    @media (max-width: $screen-sm) {
+      font-size: 16px;
+    }
+}
 article {
     margin-bottom: 30px;
     @media (max-width: $screen-md) {
@@ -358,9 +425,7 @@ article header, .main .page-header {
         margin-bottom: 15px;
     }
 }
-// .entry-content h2 {
-//   line-height: 1.8;
-// }
+
 .entry-content hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -375,6 +440,11 @@ article header, .main .page-header {
   }
   .view-more {
     font-size: 0.9em;
+  }
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
   }
 }
 .entry-tags {
@@ -402,71 +472,7 @@ article header, .main .page-header {
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.post-cover, .jumbotron {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 120px;
-  padding-bottom: 80px;
-  min-height: 400px;
-  text-align: center;
-  z-index: -1;
-  @media (max-width: $screen-md) {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 120px;
-    padding-bottom: 80px;
-  }
-  @media (max-width: $screen-sm) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-}
-.post-cover-push {
-  height: 380px;
-  @media (max-width: $screen-md) {
-    height: 400px;
-  }
-  @media (max-width: $screen-sm) {
-    height: 350px;
-  }
-}
-.post-cover h1 {
-  @media (max-width: $screen-sm) {
-    // font-size: 38px !important;
-  }
-}
-.post-cover p {
-  @media (max-width: $screen-sm) {
-    // font-size: 1.5em !important;
-  }
-}
-.post-cover, .jumbotron {
-  color: rgba(255,255,255,1);
-}
-.post-cover a {
-  color: #FFFFFF;
-}
-.post-cover p.lead {
-    @include sans-serif;
-    letter-spacing: -0.02em;
-    font-weight: 200;
-    font-size: 28px;
-    line-height: 100%;
-    color: rgba(255,255,255,0.85);
-    @media (max-width: $screen-sm) {
-      font-size: 16px;
-    }
-}
 
-// .main article h2, .main article h3 {
-//   margin-bottom: 30px;
-// }
 h2.entry-title {
   font-size: 24px;
   a {

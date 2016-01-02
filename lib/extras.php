@@ -14,6 +14,10 @@ function body_class($classes) {
       $classes[] = basename(get_permalink());
     }
   }
+  // Add post has featured image class
+  if ( is_singular() && has_post_thumbnail( $post->ID ) ) {
+      $classes[] = 'feature-image';
+  }
 
   // Add class if sidebar is active
   if (Setup\display_sidebar()) {
