@@ -2,7 +2,7 @@
 <?php $image_url = $thumb[0] ?>
 
 <a href="<?php the_permalink() ?>">
-    <div class="thumb-as-bg" style="background: url(<?php echo $image_url; ?>) no-repeat center center #DDDDDD;"></div>
+    <div class="thumb-as-bg" style="background: url(<?php echo $image_url; ?>) #DDDDDD;"></div>
 </a>
 <div class="caption">
     <h3>

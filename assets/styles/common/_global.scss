@@ -479,12 +479,6 @@ article {
         margin-top: 40px;
     }
 }
-article header, .main .page-header {
-    margin-bottom: 10px;
-    @media (max-width: $screen-sm) {
-        margin-bottom: 0;
-    }
-}
 .page-header {
   border: none;
   margin:0;
@@ -504,8 +498,8 @@ h2.entry-title,
 .post {
     h2 {
         @include sans-serif;
-        font-weight: 700;
-        letter-spacing: -.04em;
+        // font-weight: 700;
+        // letter-spacing: -.04em;
         // font-style: normal;
         // letter-spacing: -.02em;
         // line-height: 1;
@@ -572,6 +566,11 @@ h1.entry-title {
 }
 
 main {
+    p {
+        @include serif;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
     .entry-content {
         @include serif;
         font-size: 22px;
@@ -595,7 +594,12 @@ main {
             color: $gray-dark;
             text-decoration: none;
         }
-
+        time {
+            a {
+                color: $light-link-color;
+                // font-weight: 600;
+            }
+        }
         @media (max-width: $screen-sm) {
             padding-left: 20px;
         }
@@ -605,6 +609,11 @@ main {
         font-weight: 500;
         margin-top: 10px;
         margin-bottom: 0px;
+    }
+    article {
+        header {
+            margin-bottom: 20px;
+        }
     }
 }
 figcaption {
@@ -789,7 +798,9 @@ table {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    // no-repeat center center 
 }
 
 .scrim-header {
