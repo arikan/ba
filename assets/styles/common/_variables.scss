@@ -14,6 +14,7 @@ $navbar-default-link-color: #333333;
 $navbar-default-link-hover-color: #333333;
 $white-faded: rgba(255,255,255,0.5);
 $gray-dark: rgba(0,0,0,0.5);
+$light-link-color: rgba(15,68,38,0.7); // desaturate($brand-primary, 40%);
 
 
 @mixin border-radius($radius) {

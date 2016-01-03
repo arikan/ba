@@ -474,27 +474,52 @@ article header, .main .page-header {
       height: auto;
   }
 }
+time {
+    @include sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-right: 5px;
+    a {
+        color: $light-link-color;
+    }
+}
+.view-interactive {
+    @include sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    a {
+        color: $light-link-color;
+    }
+}
 .entry-tags {
     @include sans-serif;
-    margin: 50px 0 70px 0;
+    margin: 0 0 30px 0;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: right;
 
     a {
-        display: inline-block;
-        color: #333333;
-        border: 1px solid rgba(0,0,0,0.7);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        padding: 7px 10px 7px 10px;
-        margin-right: 7px;
-        margin-bottom: 12px;
-        font-size: 1.4rem;
-        text-transform: uppercase;
+        color: $light-link-color;
+        // display: inline-block;
+        // color: #333333;
+        // border: 1px solid rgba(0,0,0,0.7);
+        // -webkit-border-radius: 5px;
+        // -moz-border-radius: 5px;
+        // border-radius: 5px;
+        // padding: 7px 10px 7px 10px;
+        // margin-right: 7px;
+        // margin-bottom: 12px;
+        // font-size: 1.4rem;
+        // text-transform: uppercase;
     }
-    a:hover {
-        color: #FFFFFF;
-        background-color: #333333;
-        text-decoration: none;
+
+    @media (max-width: $screen-md) {
+        // text-align: left;
+    }
+    @media (max-width: $screen-sm) {
+        text-align: left;
     }
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -545,21 +570,12 @@ main {
             color: #333333;
         }
     }
-    time {
-        font-size: 14px;
-        margin: 0; padding: 0; line-height: 0;
-        a {
-            font-size: 14px;
-            font-weight: 600;
-            color: #999999;
-        }
-    }
 }
 article time, article p.author {
-  font-size: 16px;
-  @media (max-width: $screen-sm) {
-    font-size: 12px;
-  }
+  // font-size: 16px;
+  // @media (max-width: $screen-sm) {
+  //   font-size: 12px;
+  // }
 }
 .post-cover time, .post-cover .author {
   font-size: 18px;
@@ -780,6 +796,7 @@ table {
 .block header .author, .block header time {
   font-size: 14px;
   letter-spacing: 0.1em;
+
   @media (max-width: $screen-sm) {
     font-size: 12px;
   }
