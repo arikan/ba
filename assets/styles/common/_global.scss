@@ -324,10 +324,10 @@ div.search-module {
 // Article Entry - - - - - - - - - - - - - - - - - - - - - - - - -
 body.feature-image {
     div.entry-content {
-        margin-top: 240px;
+        margin-top: 340px;
 
         @media (max-width: $screen-md) {
-            margin-top: 200px;
+            margin-top: 280px;
         }
         @media (max-width: $screen-sm) {
             margin-top: 200px;
@@ -523,12 +523,6 @@ article header, .main .page-header {
     }
 }
 
-.entry-content hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #DDD;
-}
 .entry-content {
   .location-date {
     margin-bottom: 15px;
@@ -542,6 +536,12 @@ article header, .main .page-header {
       display: block;
       max-width: 100%;
       height: auto;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #DDD;
   }
 }
 
@@ -573,6 +573,7 @@ main, .entry-content, .entry-summary {
   letter-spacing: 0.01rem;
   font-weight: 400;
   font-style: normal;
+
   @media (max-width: $screen-sm) {
     font-size: 16px;
     line-height: 1.4;
@@ -601,7 +602,7 @@ figcaption {
 .entry-summary p, .entry-content p {
     color: rgba(0,0,0,0.7);
     margin-bottom: 30px;
-    
+
     @media (max-width: $screen-sm) {
         margin-bottom: 20px;
     }
