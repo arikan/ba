@@ -327,10 +327,10 @@ body.feature-image {
         margin-top: 240px;
 
         @media (max-width: $screen-md) {
-            margin-top: 180px;
+            margin-top: 200px;
         }
         @media (max-width: $screen-sm) {
-            margin-top: 180px;
+            margin-top: 200px;
         }
     }
     a.toggle-search {
@@ -361,6 +361,8 @@ body.feature-image {
         width: 66.6666666667%;
         float: right;
         font-size: 1.8rem;
+        margin-bottom: 20px;
+
         @media (max-width: $screen-md) {
             // width: 100%;
             // float: none;
@@ -439,47 +441,44 @@ time {
     text-align: center;
     z-index: -1;
     display: table;
+    color: rgba(255,255,255,1);
 
     .post-cover-inner {
         display: table-cell;
         text-align: center;
         vertical-align: middle;
     }
-
     @media (max-width: $screen-md) {
         min-height: 320px;
+        padding: 0 20px;
     }
     @media (max-width: $screen-sm) {
-        min-height: 320px;
-  }
-}
-.post-cover h1 {
-  @media (max-width: $screen-sm) {
-    // font-size: 38px !important;
-  }
-}
-.post-cover p {
-  @media (max-width: $screen-sm) {
-    // font-size: 1.5em !important;
-  }
-}
-.post-cover, .jumbotron {
-  color: rgba(255,255,255,1);
-}
-.post-cover a {
-  color: #FFFFFF;
-}
-.post-cover p.lead {
-    @include sans-serif;
-    letter-spacing: -0.02em;
-    font-weight: 200;
-    font-size: 28px;
-    line-height: 100%;
-    color: rgba(255,255,255,0.85);
-    @media (max-width: $screen-sm) {
-      font-size: 16px;
+        min-height: 240px;
+        padding: 0 20px;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    p.lead {
+        @include sans-serif;
+        letter-spacing: -0.02em;
+        font-weight: 200;
+        font-size: 28px;
+        line-height: 100%;
+        color: rgba(255,255,255,0.85);
+        @media (max-width: $screen-sm) {
+          font-size: 16px;
+        }
+    }
+    time, .author {
+      font-size: 18px;
+
+      @media (max-width: $screen-sm) {
+        font-size: 12px;
+      }
     }
 }
+
 article {
     margin-bottom: 30px;
     @media (max-width: $screen-md) {
@@ -500,11 +499,11 @@ article header, .main .page-header {
   margin:0;
 }
 .post-cover h1, .jumbotron h1, .page-header h1, h1.entry-title, h2.entry-title, .entry-content h2, h3 {
-  @include sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: -.04em;
-  line-height: 1;
+    @include sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -.04em;
+    line-height: 1;
 }
 .post {
     h2 {
@@ -595,25 +594,17 @@ main {
         }
     }
 }
-article time, article p.author {
-  // font-size: 16px;
-  // @media (max-width: $screen-sm) {
-  //   font-size: 12px;
-  // }
-}
-.post-cover time, .post-cover .author {
-  font-size: 18px;
-  @media (max-width: $screen-sm) {
-    font-size: 12px;
-  }
-}
 figcaption {
   font-size: 14px;
   font-style: italic;
 }
 .entry-summary p, .entry-content p {
-  color: rgba(0,0,0,0.7);
-  margin-bottom: 30px;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 30px;
+    
+    @media (max-width: $screen-sm) {
+        margin-bottom: 20px;
+    }
 }
 table {
   @include sans-serif;
