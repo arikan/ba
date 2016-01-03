@@ -15,8 +15,8 @@
 			<?php if ( $user_ID ) : ?> | <?php edit_post_link("Edit"); ?> <?php endif; ?> |
 			<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
 		</div>
+
         <?php the_excerpt(); ?>
-		<!-- <?php the_content('Read the rest of this entry &raquo;'); ?> -->
 
 		<hr/>
 	</div>

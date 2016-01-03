@@ -4,8 +4,6 @@
  */
 ?>
 
-<!-- <?php get_template_part('templates/page', 'header'); ?> -->
-
 <?php $paged = query_posts(array(
     'category_name'  => 'work',
     'posts_per_page' => -1

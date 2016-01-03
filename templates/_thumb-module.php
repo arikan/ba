@@ -1,5 +1,8 @@
+<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
+<?php $image_url = $thumb[0] ?>
+
 <a href="<?php the_permalink() ?>">
-    <? the_post_thumbnail('medium', array( 'class' => 'img-responsive', 'title' => the_title_attribute( 'echo=0' ) )); ?>
+    <div class="thumb-as-bg" style="background: url(<?php echo $image_url; ?>) no-repeat center center #DDDDDD;"></div>
 </a>
 <div class="caption">
     <h3>
