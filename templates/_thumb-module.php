@@ -11,7 +11,7 @@
     <?php
         $category = get_the_category();
         if ($category) {
-          echo '<time class="published"><a href="'.esc_url( home_url( '/' ) ) . 'works' . '/' . $category[1]->slug . '/" title="' . sprintf( __( "View all works in %s" ), $category[1]->name ) . '" ' . '>' . $category[1]->name.'</a></time>';
+          echo '<time class="published"><a href="'.esc_url( home_url( '/' ) ) . 'works' . '/' . $category[0]->slug . '/" title="' . sprintf( __( "View all works in %s" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a></time>';
         }
     ?>
 </div>
