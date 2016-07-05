@@ -366,6 +366,14 @@ body.feature-image {
             float: none;
         }
     }
+    pre {
+        float: right;
+        width: 66.6666666667%;
+        font-size: 1.8rem;
+    }
+    .gallery-item {
+        padding-top:20px;
+    }
     .gallery-item, .comments {
         clear: both;
     }
