@@ -533,9 +533,21 @@ article {
     }
 }
 .page-header {
-  border: none;
-  margin:0;
+    border: none;
+    margin:0;
 }
+body.archive {
+    .page-header {
+        h2  {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: #000000;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+    }
+}
+
 .post-cover h1,
 .jumbotron h1,
 .page-header h1,

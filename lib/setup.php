@@ -87,6 +87,7 @@ function display_sidebar() {
     is_front_page(),
     is_category(),
     is_single(),
+    is_archive(),
     is_page_template('templates/nosidebar-page.php'),
     is_page_template('template-custom.php'),
   ]);
