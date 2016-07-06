@@ -11,21 +11,28 @@
             <div class="info">
                 <?php
                     $category = get_the_category();
-                    if ($category) {
+                    if ($category && $category[0]->slug != 'blog') {
                         echo '<time class="published"><a href="'.esc_url( home_url( '/' ) ) . 'works' . '/' . $category[0]->slug . '/" title="' . sprintf( __( "View all works in %s" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a></time>';
                     }
                 ?>
+                <?php
+                    $category = get_the_category();
+                    if ($category && $category[0]->slug != 'blog') {
+                ?>
+                    <div class="entry-tags">
+                        <?php the_tags("", ", ", $after ); ?>
+                    </div>
 
-                <div class="entry-tags">
-                    <?php the_tags("", ", ", $after ); ?>
-                </div>
+                    <?php $view_interactive = get_post_meta($post->ID, "view_interactive", true); ?>
+                    <?php if($view_interactive) { ?>
+                        <span class="view-interactive">
+                            <a href="<?php echo $view_interactive; ?>" target="_blank">View interactive</a>
+                        </span>
+                    <?php } ?>
+                <?php
+                    }
+                ?>
 
-                <?php $view_interactive = get_post_meta($post->ID, "view_interactive", true); ?>
-                <?php if($view_interactive) { ?>
-                    <span class="view-interactive">
-                        <a href="<?php echo $view_interactive; ?>" target="_blank">View interactive</a>
-                    </span>
-                <?php } ?>
             </div>
 
             <?php the_content(); ?>
