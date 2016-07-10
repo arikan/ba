@@ -35,7 +35,7 @@
 	@include sans-serif;
 
 	.navbar-brand {
-		font-weight: 600;
+		font-weight: 400;
 	}
 
 	.navbar-right {
@@ -51,9 +51,9 @@
 		li {
 			a {
 				text-transform: uppercase;
-				font-size: 12px;
-				font-weight: 600;
-				letter-spacing: 1px;
+				font-size: 18px;
+				font-weight: 400;
+				// letter-spacing: 1px;
 			}
             a:hover {
                 text-decoration: none;
