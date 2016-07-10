@@ -652,6 +652,8 @@ main {
     .entry-summary {}
 
     .caption {
+        margin-bottom: 20px;
+
         a {
             color: $navbar-default-link-color;
         }
@@ -662,7 +664,6 @@ main {
         time {
             a {
                 color: $light-link-color;
-                // font-weight: 600;
             }
         }
         @media (max-width: $screen-sm) {
@@ -672,7 +673,7 @@ main {
     h3 {
         font-size: 1.8rem;
         font-weight: 400;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 0px;
         letter-spacing: 0;
     }
@@ -866,7 +867,12 @@ table {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    // inline style _thumb-module.php
+    // background-color
     // no-repeat center center
+}
+.thumb-as-bg:hover {
+    @include blended;
 }
 
 .scrim-header {

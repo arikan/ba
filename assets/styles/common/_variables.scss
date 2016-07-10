@@ -32,3 +32,8 @@ $light-link-color: rgba(15,68,38,0.65); // desaturate($brand-primary, 40%);
 @mixin sans-serif () {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+@mixin blended () {
+  // background-color: red;
+  background-blend-mode: multiply;
+}
