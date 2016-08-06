@@ -4,4 +4,6 @@
  */
 ?>
 
+<br>
+
 <?php the_content(); ?>
