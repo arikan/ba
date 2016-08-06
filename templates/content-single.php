@@ -8,7 +8,8 @@
         <?php } ?>
 
         <div class="entry-content">
-            <div class="info">
+            <figcaption class="info">
+                <p class="info">
                 <?php
                     $category = get_the_category();
                     if ($category && $category[0]->slug != 'blog') {
@@ -19,21 +20,22 @@
                     $category = get_the_category();
                     if ($category && $category[0]->slug != 'blog') {
                 ?>
-                    <div class="entry-tags">
+                    ・
+                    <span class="entry-tags">
                         <?php the_tags("", ", ", $after ); ?>
-                    </div>
+                    </span>
 
                     <?php $view_interactive = get_post_meta($post->ID, "view_interactive", true); ?>
                     <?php if($view_interactive) { ?>
                         <span class="view-interactive">
-                            <a href="<?php echo $view_interactive; ?>" target="_blank">View interactive</a>
+                            ・ <a href="<?php echo $view_interactive; ?>" target="_blank">View interactive</a>
                         </span>
                     <?php } ?>
                 <?php
                     }
                 ?>
-
-            </div>
+                </p>
+            </figcaption>
 
             <?php the_content(); ?>
         </div>
