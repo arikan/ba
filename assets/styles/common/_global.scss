@@ -490,6 +490,9 @@ body.feature-image {
 }
 
 body.bio, body.texts {
+    .content {
+        margin-top: 40px;
+    }
     p {
         // width: 66.6666666667%;
         // float: right;
@@ -517,6 +520,11 @@ body.bio, body.texts {
         }
     }
 
+}
+body.home {
+    .main {
+        text-align: center;
+    }
 }
 
 .post-cover, .jumbotron {
