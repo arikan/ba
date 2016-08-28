@@ -1013,3 +1013,40 @@ footer {
     padding-top: 40px;
     margin-bottom: 40px;
 }
+
+.boxzilla.boxzilla-bottom-right {
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #dedede;
+    border-left: 10px solid #00A5E3;
+}
+.boxzilla {
+    h4 {
+        font-size: 18px;
+        color: #000000;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #494949;
+    }
+    input[type="submit"] {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid #00A5E3;
+        color: #fff;
+        background-color: #00A5E3;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        border-radius: 4px;
+    }
+}
