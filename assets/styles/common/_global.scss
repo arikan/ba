@@ -1022,12 +1022,12 @@ footer {
 }
 .boxzilla {
     h4 {
-        font-size: 18px;
+        font-size: 18px !important;
         color: #000000;
     }
     p {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px !important;
+        line-height: 24px !important;
         color: #494949;
     }
     input[type="submit"] {
