@@ -1031,6 +1031,9 @@ footer {
         color: #494949;
         margin-bottom: 15px !important;
     }
+    p:last-child {
+        margin-bottom: 0 !important;
+    }
     input[type="submit"] {
         display: inline-block;
         margin-bottom: 0;
