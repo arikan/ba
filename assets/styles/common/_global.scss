@@ -1014,6 +1014,28 @@ footer {
     margin-bottom: 40px;
 }
 
+.mc4wp-form-fields {
+    input[type="submit"] {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid #5bc0de;
+        color: #fff;
+        background-color: #5bc0de;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        border-radius: 4px;
+    }
+}
+
 .boxzilla.boxzilla-bottom-right {
     bottom: 10px;
     right: 10px;
